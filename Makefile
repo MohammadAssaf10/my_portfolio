@@ -9,11 +9,11 @@ run_web_on_custom_ip:
 
 #Git
 
-#make commit_and_push <commit_message> branch_name=branch_name
+#make commit_and_push <commit_message> branchName=branchName
 commit_and_push:
 	git add .
 	git commit -m "$(wordlist 2, $(words $(MAKECMDGOALS)), $(MAKECMDGOALS))"
-	git push origin $(branch_name)
+	git push origin $(branchName)
 
 push_branch:
 	git push origin $(word 2, $(MAKECMDGOALS))
