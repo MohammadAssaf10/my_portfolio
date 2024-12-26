@@ -11,6 +11,8 @@ class MyThemeData {
       scaffoldBackgroundColor: const Color(0xFF252734),
       colorScheme: const ColorScheme.dark(
         primary: Color(0xFF333646),
+        secondary: Color(0xFFFFC25C),
+        tertiary: Color(0xFFEAEAEB),
       ),
     );
   }
