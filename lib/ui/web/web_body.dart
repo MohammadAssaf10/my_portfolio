@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../core/utils/functions.dart';
+import 'main_web.dart';
 import 'web_header.dart';
+import 'web_skills.dart';
 
 class WebBody extends StatelessWidget {
   const WebBody({super.key});
@@ -15,6 +17,9 @@ class WebBody extends StatelessWidget {
             scrollToSection(navIndex);
           },
         ),
+        const MainWeb(),
+        const WebSkills(),
+        const SizedBox(height: 30),
       ],
     );
   }

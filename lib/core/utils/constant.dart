@@ -16,7 +16,7 @@ class Constant {
     Icons.web,
   ];
 
-  static final List<GlobalKey> appbarKeys = List.generate(3, (index) => GlobalKey());
+  static final List<GlobalKey> appBarKeys = List.generate(3, (index) => GlobalKey());
 }
 
 class SocialMediaLinks {
