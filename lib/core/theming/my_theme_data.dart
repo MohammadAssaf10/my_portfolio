@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'font_weight_helper.dart';
-
 class MyThemeData {
   MyThemeData._();
 
@@ -12,13 +10,12 @@ class MyThemeData {
       brightness: Brightness.dark,
       scaffoldBackgroundColor: const Color(0xFF252734),
       colorScheme: const ColorScheme.dark(
-        primary: Color(0xFF333646),
-        onPrimary: Color(0xFF424657),
-        secondary: Color(0xFFFFC25C),
-        onSecondary: Color(0xFFC8C9CE),
-        tertiary: Color(0xFFEAEAEB),
-        onTertiary: Color(0xFF666874)
-      ),
+          primary: Color(0xFF333646),
+          onPrimary: Color(0xFF424657),
+          secondary: Color(0xFFFFC25C),
+          onSecondary: Color(0xFFC8C9CE),
+          tertiary: Color(0xFFEAEAEB),
+          onTertiary: Color(0xFF666874)),
       iconTheme: const IconThemeData(
         color: Color(0xFFEAEAEB),
       ),

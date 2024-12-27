@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../core/utils/constant.dart';
 import 'main_web.dart';
 import 'web_contact.dart';
 import 'web_header.dart';

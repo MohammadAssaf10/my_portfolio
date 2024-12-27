@@ -18,7 +18,7 @@ class WebContact extends StatelessWidget {
         children: [
           // title
           Text(
-            "Get in touch",
+            "Contact us",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 24,
@@ -64,7 +64,7 @@ class WebContact extends StatelessWidget {
               width: double.maxFinite,
               child: ElevatedButton(
                 onPressed: () {},
-                child: const Text("Get in touch"),
+                child: const Text("Contact us"),
               ),
             ),
           ),
