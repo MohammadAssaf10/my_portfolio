@@ -3,21 +3,17 @@ class Assets {
   Assets._();
 
   static const String imagesAndroidIcon = 'assets/images/android_icon.png';
-  static const String imagesCss3 = 'assets/images/css3.png';
+  static const String imagesCashMobile = 'assets/images/cash_mobile.jpg';
   static const String imagesDart = 'assets/images/dart.png';
   static const String imagesDesktopIcon = 'assets/images/desktop_icon.png';
-  static const String imagesDocker = 'assets/images/docker.png';
   static const String imagesFacebook = 'assets/images/facebook.png';
   static const String imagesFlutter = 'assets/images/flutter.png';
   static const String imagesGithub = 'assets/images/github.png';
-  static const String imagesHtml5 = 'assets/images/html5.png';
-  static const String imagesHugo = 'assets/images/hugo.png';
-  static const String imagesInstagram = 'assets/images/instagram.png';
+  static const String imagesHiRadio = 'assets/images/hi_radio.jpg';
+  static const String imagesIMTN = 'assets/images/iMTN.jpg';
   static const String imagesIosIcon = 'assets/images/ios_icon.png';
-  static const String imagesJavascript = 'assets/images/javascript.png';
   static const String imagesLinkedin = 'assets/images/linkedin.png';
   static const String imagesMyFlutterAvatar = 'assets/images/my_flutter_avatar.png';
-  static const String imagesPython = 'assets/images/python.png';
   static const String imagesTelegram = 'assets/images/telegram.png';
   static const String imagesWebIcon = 'assets/images/web_icon.png';
 

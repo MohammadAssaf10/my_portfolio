@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../core/utils/constant.dart';
 import '../../core/widgets/custom_auto_size_text.dart';
+import 'web_skills_data.dart';
 
 class WebSkills extends StatelessWidget {
   const WebSkills({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return         Container(
-      key: Constant.appBarKeys[1],
+    return Container(
+      key: Constant.appBarKeys[0],
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(
         25,
@@ -32,7 +33,7 @@ class WebSkills extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 50),
-
+          const WebSkillsData(),
           // platforms and skills
           // if (constraints.maxWidth >= kMedDesktopWidth)
           //   const SkillsDesktop()

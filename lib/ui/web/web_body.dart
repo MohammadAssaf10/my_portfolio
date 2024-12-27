@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../../core/utils/constant.dart';
 import '../../core/utils/functions.dart';
 import 'main_web.dart';
 import 'web_header.dart';
+import 'web_projects.dart';
 import 'web_skills.dart';
 
 class WebBody extends StatelessWidget {
@@ -19,6 +21,8 @@ class WebBody extends StatelessWidget {
         ),
         const MainWeb(),
         const WebSkills(),
+        const SizedBox(height: 30),
+        const WebProjects(),
         const SizedBox(height: 30),
       ],
     );

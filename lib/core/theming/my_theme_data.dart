@@ -13,7 +13,9 @@ class MyThemeData {
       scaffoldBackgroundColor: const Color(0xFF252734),
       colorScheme: const ColorScheme.dark(
         primary: Color(0xFF333646),
+        onPrimary: Color(0xFF424657),
         secondary: Color(0xFFFFC25C),
+        onSecondary: Color(0xFFC8C9CE),
         tertiary: Color(0xFFEAEAEB),
       ),
       iconTheme: const IconThemeData(
