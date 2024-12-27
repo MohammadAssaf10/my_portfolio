@@ -2,20 +2,17 @@ import 'package:flutter/material.dart';
 
 import '../../core/theming/font_weight_helper.dart';
 import '../../core/utils/constant.dart';
+import '../../core/utils/functions.dart';
 import '../../core/widgets/custom_auto_size_text.dart';
 import 'site_logo.dart';
 
 class WebHeader extends StatelessWidget {
-  const WebHeader({
-    super.key,
-    required this.onNavMenuTap,
-  });
-
-  final Function(int) onNavMenuTap;
+  const WebHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      key: Constant.appBarKeys.first,
       height: 60,
       margin: const EdgeInsets.symmetric(
         vertical: 10,
@@ -42,7 +39,7 @@ class WebHeader extends StatelessWidget {
               padding: const EdgeInsets.only(right: 20),
               child: TextButton(
                 onPressed: () {
-                  onNavMenuTap(i);
+                  scrollToSection(Constant.appBarKeys[i]);
                 },
                 child: CustomAutoSizeText(
                   text: Constant.appBarTitles[i],

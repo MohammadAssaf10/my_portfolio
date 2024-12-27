@@ -17,6 +17,7 @@ class MyThemeData {
         secondary: Color(0xFFFFC25C),
         onSecondary: Color(0xFFC8C9CE),
         tertiary: Color(0xFFEAEAEB),
+        onTertiary: Color(0xFF666874)
       ),
       iconTheme: const IconThemeData(
         color: Color(0xFFEAEAEB),

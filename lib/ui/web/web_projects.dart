@@ -11,7 +11,7 @@ class WebProjects extends StatelessWidget {
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
     return Container(
-      key: Constant.appBarKeys[1],
+      key: Constant.appBarKeys[2],
       width: screenWidth,
       padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
       child: Column(

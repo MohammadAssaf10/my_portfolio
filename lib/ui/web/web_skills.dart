@@ -10,7 +10,7 @@ class WebSkills extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      key: Constant.appBarKeys[0],
+      key: Constant.appBarKeys[1],
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(
         25,
@@ -34,11 +34,6 @@ class WebSkills extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           const WebSkillsData(),
-          // platforms and skills
-          // if (constraints.maxWidth >= kMedDesktopWidth)
-          //   const SkillsDesktop()
-          // else
-          //   const SkillsMobile(),
         ],
       ),
     );

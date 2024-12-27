@@ -20,7 +20,7 @@ class Constant {
   ];
 
   static final List<GlobalKey> appBarKeys =
-      List.generate(3, (index) => GlobalKey());
+      List.generate(4, (index) => GlobalKey());
 
   static final List<Map> platformItems = [
     {
@@ -80,10 +80,8 @@ class Constant {
 }
 
 class SocialMediaLinks {
-  static const String github = "https://";
-  static const String linkedIn = "https://";
-  static const String facebook = "https://";
-  static const String instagram = "https://www.google.com";
-  static const String telegram = "https://";
-  static const String blog = "https://www.shohruhak.com/tech";
+  static const String github = "https://github.com/MohammadAssaf10";
+  static const String linkedIn = "https://www.linkedin.com/in/mohamadassaf/";
+  static const String facebook = "https://www.facebook.com/Mohamad10Assaf";
+  static const String telegram = "https://t.me/MohamadAssaf10";
 }

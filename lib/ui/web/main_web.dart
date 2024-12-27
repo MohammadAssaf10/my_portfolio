@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../core/theming/font_weight_helper.dart';
+import '../../core/utils/constant.dart';
+import '../../core/utils/functions.dart';
 import '../../core/widgets/custom_auto_size_text.dart';
 import '../../generated/assets.dart';
 
@@ -44,9 +46,11 @@ class MainWeb extends StatelessWidget {
                 SizedBox(
                   width: 250,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      scrollToSection(Constant.appBarKeys.last);
+                    },
                     child: CustomAutoSizeText(
-                      text: "Get in touch",
+                      text: "Contact me",
                       minFontSize: 15,
                       maxFontSize: 19,
                       textStyle: TextStyle(
