@@ -25,6 +25,7 @@ class _WebContactState extends State<WebContact> {
       constraints: const BoxConstraints(
         maxWidth: 700,
       ),
+      margin: const EdgeInsets.symmetric(horizontal: 15),
       padding: const EdgeInsets.fromLTRB(25, 30, 25, 30),
       decoration: BoxDecoration(
           color: Theme.of(context).colorScheme.primary,
