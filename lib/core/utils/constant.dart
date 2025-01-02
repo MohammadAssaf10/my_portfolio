@@ -39,12 +39,40 @@ class Constant {
 
   static final List<Map> skillItems = [
     {
-      "img": Assets.imagesFlutter,
+      "img": Assets.iconsFlutter,
       "title": "Flutter",
     },
     {
-      "img": Assets.imagesDart,
+      "img": Assets.iconsDart,
       "title": "Dart",
+    },
+    {
+      "img": Assets.iconsBloc,
+      "title": "Bloc",
+    },
+    {
+      "img": Assets.iconsFirebase,
+      "title": "Firebase",
+    },
+    {
+      "img": Assets.iconsGit,
+      "title": "Git",
+    },
+    {
+      "img": Assets.iconsCiCd,
+      "title": "CI/CD",
+    },
+    {
+      "img": Assets.iconsXd,
+      "title": "XD",
+    },
+    {
+      "img": Assets.iconsFigma,
+      "title": "Figma",
+    },
+    {
+      "img": Assets.iconsSqflite,
+      "title": "SQLite",
     },
   ];
 

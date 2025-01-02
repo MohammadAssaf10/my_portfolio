@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../core/utils/constant.dart';
 
@@ -62,7 +63,7 @@ class WebSkillsData extends StatelessWidget {
                     ),
                     backgroundColor: Theme.of(context).colorScheme.onPrimary,
                     label: Text(Constant.skillItems[i]["title"]),
-                    avatar: Image.asset(Constant.skillItems[i]["img"]),
+                    avatar: SvgPicture.asset(Constant.skillItems[i]["img"]),
                   ),
               ],
             ),

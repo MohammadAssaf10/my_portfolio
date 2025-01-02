@@ -5,7 +5,7 @@ build_web:
 	flutter build web
 
 run_web_on_custom_ip:
-	flutter run -d chrome --web-hostname 192.168.43.220 --web-port 8000
+	flutter run -d chrome --web-hostname 192.168.1.10 --web-port 8000
 
 #Git
 

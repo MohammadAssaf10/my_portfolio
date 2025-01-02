@@ -2,6 +2,15 @@
 class Assets {
   Assets._();
 
+  static const String iconsBloc = 'assets/icons/bloc.svg';
+  static const String iconsCiCd = 'assets/icons/ci_cd.svg';
+  static const String iconsDart = 'assets/icons/dart.svg';
+  static const String iconsFigma = 'assets/icons/figma.svg';
+  static const String iconsFirebase = 'assets/icons/firebase.svg';
+  static const String iconsFlutter = 'assets/icons/flutter.svg';
+  static const String iconsGit = 'assets/icons/git.svg';
+  static const String iconsSqflite = 'assets/icons/sqflite.svg';
+  static const String iconsXd = 'assets/icons/xd.svg';
   static const String imagesAndroidIcon = 'assets/images/android_icon.png';
   static const String imagesCashMobile = 'assets/images/cash_mobile.jpg';
   static const String imagesDart = 'assets/images/dart.png';

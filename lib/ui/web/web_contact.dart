@@ -1,19 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
+import '../../core/theming/font_weight_helper.dart';
 import '../../core/utils/constant.dart';
 import '../../core/utils/functions.dart';
 import '../../core/widgets/custom_text_field.dart';
 import '../../generated/assets.dart';
 
-class WebContact extends StatelessWidget {
+class WebContact extends StatefulWidget {
   const WebContact({super.key});
+
+  @override
+  State<WebContact> createState() => _WebContactState();
+}
+
+class _WebContactState extends State<WebContact> {
+  final TextEditingController subjectTextController = TextEditingController();
+  final TextEditingController bodyTextController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Container(
       key: Constant.appBarKeys.last,
-      padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-      color: Theme.of(context).colorScheme.primary,
+      constraints: const BoxConstraints(
+        maxWidth: 700,
+      ),
+      padding: const EdgeInsets.fromLTRB(25, 30, 25, 30),
+      decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.primary,
+          borderRadius: BorderRadius.circular(10)),
       child: Column(
         children: [
           // title
@@ -27,58 +42,60 @@ class WebContact extends StatelessWidget {
           ),
 
           const SizedBox(height: 50),
-          ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 700,
-              maxHeight: 100,
-            ),
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                // if (constraints.maxWidth >= kMinDesktopWidth) {
-                return buildNameEmailFieldDesktop();
-                // }
-
-                // else
-                // return buildNameEmailFieldMobile();
-              },
-            ),
+          CustomTextField(
+            controller: subjectTextController,
+            hintText: "Subject",
           ),
           const SizedBox(height: 15),
           // message
-          ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 700,
-            ),
-            child: const CustomTextField(
-              hintText: "Your message",
-              maxLines: 16,
-            ),
+          CustomTextField(
+            controller: bodyTextController,
+            hintText: "Your message",
+            maxLines: 16,
           ),
           const SizedBox(height: 20),
           // send button
-          ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 700,
-            ),
-            child: SizedBox(
-              width: double.maxFinite,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: const Text("Send"),
+          SizedBox(
+            width: double.maxFinite,
+            child: ElevatedButton(
+              onPressed: () {
+                if (subjectTextController.text.isNotEmpty &&
+                    bodyTextController.text.isNotEmpty) {
+                  sendEmail(
+                    subject: subjectTextController.text,
+                    body: bodyTextController.text,
+                  );
+                } else {
+                  Fluttertoast.showToast(
+                    msg:
+                        "Please fill all required fields before sending message",
+                    toastLength: Toast.LENGTH_SHORT,
+                    gravity: ToastGravity.BOTTOM,
+                    timeInSecForIosWeb: 2,
+                    backgroundColor: Theme.of(context).colorScheme.primary,
+                    textColor: Theme.of(context).colorScheme.tertiary,
+                    fontSize: 16,
+                    webPosition: "center_bottom",
+                    webBgColor: "#333646",
+                  );
+                }
+              },
+              child: const Text(
+                "Send",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeightHelper.bold,
+                ),
               ),
             ),
           ),
-          const SizedBox(height: 30),
 
-          ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 300,
-            ),
-            child: const Divider(),
+          const Divider(
+            endIndent: 180,
+            indent: 180,
+            height: 60,
           ),
-          const SizedBox(height: 15),
 
-          // SNS icon button links
           Wrap(
             spacing: 12,
             runSpacing: 12,
@@ -124,26 +141,6 @@ class WebContact extends StatelessWidget {
           )
         ],
       ),
-    );
-  }
-
-  Row buildNameEmailFieldDesktop() {
-    return const Row(
-      children: [
-        // name
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your name",
-          ),
-        ),
-        SizedBox(width: 15),
-        // email
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your email",
-          ),
-        ),
-      ],
     );
   }
 

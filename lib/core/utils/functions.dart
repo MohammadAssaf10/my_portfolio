@@ -15,3 +15,19 @@ void openUrl(String url) async {
     throw Exception('Could not launch $uri');
   }
 }
+
+void sendEmail({
+  required String subject,
+  required String body,
+}) async {
+  String encodedSubject = Uri.encodeComponent(subject);
+  String encodedBody = Uri.encodeComponent(body);
+  String mailtoLink =
+      'mailto:mhamad234assaf@gmail.com?subject=$encodedSubject&body=$encodedBody';
+
+  if (await canLaunchUrl(Uri.parse(mailtoLink))) {
+    await launchUrl(Uri.parse(mailtoLink));
+  } else {
+    throw 'Could not launch $mailtoLink';
+  }
+}
