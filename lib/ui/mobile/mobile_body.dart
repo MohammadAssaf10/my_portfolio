@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/ui/web/web_skills_data.dart';
 
 import '../../core/widgets/projects_section.dart';
 import '../../core/widgets/skills.dart';
-import 'main_web.dart';
 import '../../core/widgets/web_section.dart';
-import 'web_header.dart';
+import 'main_mobile.dart';
+import 'mobile_header.dart';
+import 'mobile_skills_data.dart';
 
-class WebBody extends StatelessWidget {
-  const WebBody({super.key});
+class MobileBody extends StatelessWidget {
+  const MobileBody({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
       child: Column(
         children: [
-          WebHeader(),
-          MainWeb(),
-          Skills(skillsData: WebSkillsData()),
+          MobileHeader(),
+          MainMobile(),
+          Skills(skillsData: MobileSkillsData()),
           SizedBox(height: 30),
           ProjectsSection(),
           SizedBox(height: 30),

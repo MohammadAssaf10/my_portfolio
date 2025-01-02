@@ -47,36 +47,39 @@ class ProjectCard extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-            child: CustomAutoSizeText(
-              text: project.subtitle,
-              maxFontSize: 15,
-              textStyle: TextStyle(
-                fontSize: 12,
-                color: Theme.of(context).colorScheme.onSecondary,
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+              child: CustomAutoSizeText(
+                text: project.subtitle,
+                maxFontSize: 15,
+                textStyle: TextStyle(
+                  fontSize: 12,
+                  color: Theme.of(context).colorScheme.onSecondary,
+                ),
               ),
             ),
           ),
-          const Spacer(),
           Container(
             color: Theme.of(context).colorScheme.primary,
+            width: double.infinity,
             padding: const EdgeInsets.symmetric(
               horizontal: 12,
               vertical: 10,
             ),
             child: Row(
               children: [
-                CustomAutoSizeText(
-                  text: "Available on:",
-                  minFontSize: 10,
-                  maxFontSize: 13,
-                  textStyle: TextStyle(
-                    color: Theme.of(context).colorScheme.secondary,
-                    fontSize: 10,
+                Expanded(
+                  child: CustomAutoSizeText(
+                    text: "Available on:",
+                    minFontSize: 10,
+                    maxFontSize: 13,
+                    textStyle: TextStyle(
+                      color: Theme.of(context).colorScheme.secondary,
+                      fontSize: 10,
+                    ),
                   ),
                 ),
-                const Spacer(),
                 if (project.androidLink != null)
                   Padding(
                     padding: const EdgeInsets.only(left: 6),

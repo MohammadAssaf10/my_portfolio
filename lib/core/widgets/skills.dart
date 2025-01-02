@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../core/utils/constant.dart';
-import '../../core/widgets/custom_auto_size_text.dart';
-import 'web_skills_data.dart';
+import '../utils/constant.dart';
+import 'custom_auto_size_text.dart';
 
-class WebSkills extends StatelessWidget {
-  const WebSkills({super.key});
+class Skills extends StatelessWidget {
+  final Widget skillsData;
+
+  const Skills({
+    super.key,
+    required this.skillsData,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +37,7 @@ class WebSkills extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 50),
-          const WebSkillsData(),
+          skillsData,
         ],
       ),
     );

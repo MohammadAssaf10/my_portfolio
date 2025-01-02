@@ -30,10 +30,7 @@ class WebHeader extends StatelessWidget {
       ),
       child: Row(
         children: [
-          SiteLogo(
-            onTap: () {},
-          ),
-          const Spacer(),
+          const Expanded(child: SiteLogo()),
           for (int i = 0; i < Constant.appBarTitles.length; i++)
             Padding(
               padding: const EdgeInsets.only(right: 20),

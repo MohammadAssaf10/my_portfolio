@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../core/utils/constant.dart';
-import '../../core/widgets/custom_auto_size_text.dart';
-import '../../core/widgets/project_card.dart';
+import '../utils/constant.dart';
+import 'custom_auto_size_text.dart';
+import 'project_card.dart';
 
-class WebProjects extends StatelessWidget {
-  const WebProjects({super.key});
+class ProjectsSection extends StatelessWidget {
+  const ProjectsSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final double screenWidth = MediaQuery.of(context).size.width;
+    final double screenWidth = MediaQuery.sizeOf(context).width;
     return Container(
       key: Constant.appBarKeys[2],
       width: screenWidth,

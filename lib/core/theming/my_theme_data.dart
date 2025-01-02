@@ -9,6 +9,9 @@ class MyThemeData {
     ).copyWith(
       brightness: Brightness.dark,
       scaffoldBackgroundColor: const Color(0xFF252734),
+      drawerTheme: const DrawerThemeData(
+        backgroundColor: Color(0xFF252734),
+      ),
       colorScheme: const ColorScheme.dark(
           primary: Color(0xFF333646),
           onPrimary: Color(0xFF424657),

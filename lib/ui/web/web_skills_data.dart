@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../core/utils/constant.dart';
+import '../../core/widgets/custom_auto_size_text.dart';
 
 class WebSkillsData extends StatelessWidget {
   const WebSkillsData({super.key});
@@ -37,7 +38,11 @@ class WebSkillsData extends StatelessWidget {
                       Constant.platformItems[i]["img"],
                       width: 26,
                     ),
-                    title: Text(Constant.platformItems[i]["title"]),
+                    title: CustomAutoSizeText(
+                      text: Constant.platformItems[i]["title"],
+                      textStyle: const TextStyle(),
+                      maxFontSize: 20,
+                    ),
                   ),
                 )
             ],

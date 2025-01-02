@@ -6,6 +6,8 @@ import 'project.dart';
 class Constant {
   Constant._();
 
+  static final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+
   static const List<String> appBarTitles = [
     "Home",
     "Skills",

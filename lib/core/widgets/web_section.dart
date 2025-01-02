@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-import '../../core/theming/font_weight_helper.dart';
-import '../../core/utils/constant.dart';
-import '../../core/utils/functions.dart';
-import '../../core/widgets/custom_text_field.dart';
+import '../theming/font_weight_helper.dart';
+import '../utils/constant.dart';
+import '../utils/functions.dart';
+import 'custom_text_field.dart';
 import '../../generated/assets.dart';
 
-class WebContact extends StatefulWidget {
-  const WebContact({super.key});
+class WebSection extends StatefulWidget {
+  const WebSection({super.key});
 
   @override
-  State<WebContact> createState() => _WebContactState();
+  State<WebSection> createState() => _WebSectionState();
 }
 
-class _WebContactState extends State<WebContact> {
+class _WebSectionState extends State<WebSection> {
   final TextEditingController subjectTextController = TextEditingController();
   final TextEditingController bodyTextController = TextEditingController();
 

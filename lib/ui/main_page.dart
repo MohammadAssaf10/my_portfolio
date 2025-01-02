@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../core/widgets/custom_auto_size_text.dart';
+import '../core/utils/constant.dart';
 import '../core/widgets/responsive_widget.dart';
+import 'mobile/drawer_mobile.dart';
+import 'mobile/mobile_body.dart';
 import 'web/web_body.dart';
 
 class MainPage extends StatelessWidget {
@@ -10,20 +12,12 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ResponsiveWidget(
-        mobile: Container(
-          color: Colors.red,
-          child: const Center(
-            child: CustomAutoSizeText(
-              text: "Mobile Screen",
-              maxFontSize: 17,
-              minFontSize: 14,
-              textStyle: TextStyle(),
-            ),
-          ),
-        ),
-        tablet: const WebBody(),
-        desktop: const WebBody(),
+      key: Constant.scaffoldKey,
+      endDrawer:
+          ResponsiveWidget.isMobile(context) ? const DrawerMobile() : null,
+      body: const ResponsiveWidget(
+        mobile: MobileBody(),
+        desktop: WebBody(),
       ),
     );
   }
