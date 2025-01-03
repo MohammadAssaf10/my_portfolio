@@ -28,7 +28,7 @@ merge_branches:
 	git merge $(source_branch)
 	git push origin $(target_branch)
 
-create_branch:
+createBranch:
 	git branch $(word 2, $(MAKECMDGOALS))
 
 delete_local_branch:
