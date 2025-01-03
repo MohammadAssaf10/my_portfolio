@@ -1,5 +1,5 @@
 class Routes {
   Routes._();
 
-  static const String mainPage = '/MAPortfolio';
+  static const String mainPage = '/';
 }
