@@ -52,10 +52,10 @@ class ProjectCard extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
               child: CustomAutoSizeText(
                 text: project.subtitle,
-                maxFontSize: 16,
-                minFontSize: 12,
+                maxFontSize: 17,
+                minFontSize: 13,
                 textStyle: TextStyle(
-                  fontSize: 14,
+                  fontSize: 15,
                   color: Theme.of(context).colorScheme.onSecondary,
                 ),
               ),
@@ -73,11 +73,11 @@ class ProjectCard extends StatelessWidget {
                 Expanded(
                   child: CustomAutoSizeText(
                     text: "Available on:",
-                    minFontSize: 8,
-                    maxFontSize: 12,
+                    minFontSize: 10,
+                    maxFontSize: 14,
                     textStyle: TextStyle(
                       color: Theme.of(context).colorScheme.secondary,
-                      fontSize: 10,
+                      fontSize: 12,
                     ),
                   ),
                 ),
