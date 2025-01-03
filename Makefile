@@ -1,5 +1,9 @@
 #Flutter Web
 
+#cd .\docs
+#	rm *
+#	cd ..\
+
 buildWeb:
 	flutter clean
 	flutter build web --output=docs
