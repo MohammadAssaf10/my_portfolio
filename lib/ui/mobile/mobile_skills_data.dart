@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../core/utils/constant.dart';
+import '../../core/widgets/custom_auto_size_text.dart';
 
 class MobileSkillsData extends StatelessWidget {
   const MobileSkillsData({super.key});
@@ -32,7 +33,10 @@ class MobileSkillsData extends StatelessWidget {
                   Constant.platformItems[i]["img"],
                   width: 26,
                 ),
-                title: Text(Constant.platformItems[i]["title"]),
+                title: CustomAutoSizeText(
+                  text: Constant.platformItems[i]["title"],
+                  maxFontSize: 20,
+                ),
               ),
             ),
           const SizedBox(height: 50),
@@ -46,8 +50,8 @@ class MobileSkillsData extends StatelessWidget {
               for (int i = 0; i < Constant.skillItems.length; i++)
                 Chip(
                   padding: const EdgeInsets.symmetric(
-                    vertical: 12.0,
-                    horizontal: 16.0,
+                    vertical: 12,
+                    horizontal: 16,
                   ),
                   backgroundColor: Theme.of(context).colorScheme.onPrimary,
                   label: Text(Constant.skillItems[i]["title"]),

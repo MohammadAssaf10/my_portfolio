@@ -40,7 +40,6 @@ class WebSkillsData extends StatelessWidget {
                     ),
                     title: CustomAutoSizeText(
                       text: Constant.platformItems[i]["title"],
-                      textStyle: const TextStyle(),
                       maxFontSize: 20,
                     ),
                   ),

@@ -5,14 +5,14 @@ class CustomAutoSizeText extends StatelessWidget {
   final String text;
   final double minFontSize;
   final double maxFontSize;
-  final TextStyle textStyle;
+  final TextStyle? textStyle;
 
   const CustomAutoSizeText({
     super.key,
     required this.text,
     this.minFontSize = 12,
     required this.maxFontSize,
-    required this.textStyle,
+    this.textStyle,
   });
 
   @override
@@ -20,7 +20,7 @@ class CustomAutoSizeText extends StatelessWidget {
     final double fontSize = MediaQuery.sizeOf(context).width * 0.025;
     return AutoSizeText(
       text,
-      style: textStyle.copyWith(fontSize: fontSize),
+      style: textStyle?.copyWith(fontSize: fontSize),
       minFontSize: minFontSize,
       maxFontSize: maxFontSize,
     );

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import '../../generated/assets.dart';
 import '../theming/font_weight_helper.dart';
 import '../utils/constant.dart';
 import '../utils/functions.dart';
+import 'custom_auto_size_text.dart';
 import 'custom_text_field.dart';
-import '../../generated/assets.dart';
 
 class WebSection extends StatefulWidget {
   const WebSection({super.key});
@@ -33,9 +34,11 @@ class _WebSectionState extends State<WebSection> {
       child: Column(
         children: [
           // title
-          Text(
-            "Contact Me",
-            style: TextStyle(
+          CustomAutoSizeText(
+            text: "Contact Me",
+            minFontSize: 22,
+            maxFontSize: 26,
+            textStyle: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 24,
               color: Theme.of(context).colorScheme.tertiary,
@@ -81,9 +84,11 @@ class _WebSectionState extends State<WebSection> {
                   );
                 }
               },
-              child: const Text(
-                "Send",
-                style: TextStyle(
+              child: const CustomAutoSizeText(
+                text: "Send",
+                minFontSize: 14,
+                maxFontSize: 18,
+                textStyle: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeightHelper.bold,
                 ),

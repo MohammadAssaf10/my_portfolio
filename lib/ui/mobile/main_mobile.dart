@@ -38,7 +38,7 @@ class MainMobile extends StatelessWidget {
           CustomAutoSizeText(
             text: "Hi,\nI'm Mohammad Assaf\nA Flutter Developer",
             maxFontSize: 26,
-            minFontSize: 18,
+            minFontSize: 22,
             textStyle: TextStyle(
               fontSize: 24,
               height: 1.5,
@@ -57,11 +57,11 @@ class MainMobile extends StatelessWidget {
               child: CustomAutoSizeText(
                 text: "Contact me",
                 minFontSize: 12,
-                maxFontSize: 15,
+                maxFontSize: 16,
                 textStyle: TextStyle(
                   color: Theme.of(context).colorScheme.tertiary,
                   fontWeight: FontWeightHelper.bold,
-                  fontSize: 13,
+                  fontSize: 14,
                 ),
               ),
             ),

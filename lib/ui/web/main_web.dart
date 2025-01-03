@@ -33,8 +33,8 @@ class MainWeb extends StatelessWidget {
               children: [
                 CustomAutoSizeText(
                   text: "Hi,\nI'm Mohammad Assaf\nA Flutter Developer",
-                  minFontSize: 28,
-                  maxFontSize: 32,
+                  minFontSize: 26,
+                  maxFontSize: 30,
                   textStyle: TextStyle(
                     fontSize: 28,
                     height: 1.5,
@@ -51,8 +51,8 @@ class MainWeb extends StatelessWidget {
                     },
                     child: CustomAutoSizeText(
                       text: "Contact me",
-                      minFontSize: 15,
-                      maxFontSize: 19,
+                      minFontSize: 13,
+                      maxFontSize: 17,
                       textStyle: TextStyle(
                         color: Theme.of(context).colorScheme.tertiary,
                         fontWeight: FontWeightHelper.bold,

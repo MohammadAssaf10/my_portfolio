@@ -13,8 +13,8 @@ class SiteLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomAutoSizeText(
       text: "MA",
-      minFontSize: 22,
-      maxFontSize: 25,
+      minFontSize: 20,
+      maxFontSize: 24,
       textStyle: TextStyle(
         fontSize: 22,
         fontWeight: FontWeightHelper.bold,

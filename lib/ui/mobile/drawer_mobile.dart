@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/theming/font_weight_helper.dart';
 import '../../core/utils/constant.dart';
 import '../../core/utils/functions.dart';
+import '../../core/widgets/custom_auto_size_text.dart';
 
 class DrawerMobile extends StatelessWidget {
   const DrawerMobile({super.key});
@@ -43,7 +44,10 @@ class DrawerMobile extends StatelessWidget {
                 scrollToSection(Constant.appBarKeys[i]);
               },
               leading: Icon(Constant.appBarIcons[i]),
-              title: Text(Constant.appBarTitles[i]),
+              title: CustomAutoSizeText(
+                text: Constant.appBarTitles[i],
+                maxFontSize: 20,
+              ),
             )
         ],
       ),

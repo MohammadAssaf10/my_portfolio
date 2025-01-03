@@ -28,8 +28,8 @@ class Skills extends StatelessWidget {
         children: [
           CustomAutoSizeText(
             text: "What I can do",
-            minFontSize: 24,
-            maxFontSize: 28,
+            minFontSize: 22,
+            maxFontSize: 26,
             textStyle: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,

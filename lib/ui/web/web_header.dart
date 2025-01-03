@@ -40,8 +40,8 @@ class WebHeader extends StatelessWidget {
                 },
                 child: CustomAutoSizeText(
                   text: Constant.appBarTitles[i],
-                  minFontSize: 16,
-                  maxFontSize: 20,
+                  minFontSize: 14,
+                  maxFontSize: 18,
                   textStyle: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeightHelper.medium,

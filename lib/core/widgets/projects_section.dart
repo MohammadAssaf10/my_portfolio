@@ -19,8 +19,8 @@ class ProjectsSection extends StatelessWidget {
           // Work projects title
           CustomAutoSizeText(
             text:"Work Projects",
-            minFontSize: 24,
-            maxFontSize: 27,
+            minFontSize: 22,
+            maxFontSize: 26,
             textStyle: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
