@@ -80849,10 +80849,10 @@ return new A.BG(this.c,p,o,q,B.yC,B.yD,r,!0,s)}}
 A.Lz.prototype={
 L(a){var s,r,q,p=null,o=A.kc(10),n=A.V(a),m=this.c,l=A.jp(m.a,B.AX,200,280),k=A.V(a).ax,j=k.CW
 k=A.d8(p,p,j==null?k.y:j,p,p,p,p,p,p,p,p,16,p,p,B.fL,p,p,!0,p,p,p,p,p,p,p,p)
-j=A.avQ(new A.cw(B.GA,new A.dQ(m.c,12,16,A.d8(p,p,A.V(a).ax.z,p,p,p,p,p,p,p,p,14,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p),p))
+j=A.avQ(new A.cw(B.GA,new A.dQ(m.c,13,17,A.d8(p,p,A.V(a).ax.z,p,p,p,p,p,p,p,p,15,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p),p))
 s=A.V(a)
 r=t.p
-q=A.b([A.avQ(new A.dQ("Available on:",8,12,A.d8(p,p,A.V(a).ax.y,p,p,p,p,p,p,p,p,10,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p))],r)
+q=A.b([A.avQ(new A.dQ("Available on:",10,14,A.d8(p,p,A.V(a).ax.y,p,p,p,p,p,p,p,p,12,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p))],r)
 q.push(new A.cw(B.mF,A.ml(!1,!0,A.jp("assets/images/android_icon.png",p,p,17),p,!0,p,p,p,p,p,p,p,p,p,new A.a9R(this),p,p,p,p,p,p,p),p))
 q.push(new A.cw(B.mF,A.ml(!1,!0,A.jp("assets/images/web_icon.png",p,p,17),p,!0,p,p,p,p,p,p,p,p,p,new A.a9S(this),p,p,p,p,p,p,p),p))
 return A.eY(p,A.ih(A.b([l,new A.cw(B.GC,new A.dQ(m.b,14,18,k,p),p),j,A.eY(p,A.Ap(q,B.ai,B.at,B.aG),B.w,s.ax.b,p,p,p,p,p,B.GB,1/0)],r),B.bv,B.at,B.dm),B.c5,p,p,new A.cS(n.ax.c,p,p,o,p,p,B.an),470,p,p,p,280)}}
