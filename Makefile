@@ -31,7 +31,7 @@ merge_branches:
 createBranch:
 	git branch $(word 2, $(MAKECMDGOALS))
 
-delete_local_branch:
+deleteLocalBranch:
 	git branch -D $(word 2, $(MAKECMDGOALS))
 
 delete_remote_branch:
