@@ -1,6 +1,6 @@
 #Flutter Web
 
-build_web:
+buildWeb:
 	flutter clean
 	flutter build web
 
