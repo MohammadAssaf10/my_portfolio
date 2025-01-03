@@ -2,7 +2,7 @@
 
 buildWeb:
 	flutter clean
-	flutter build web
+	flutter build web --output=docs
 
 run_web_on_custom_ip:
 	flutter run -d chrome --web-hostname 192.168.1.10 --web-port 8000
